@@ -1,0 +1,6 @@
+Title: Bayesian Methods in Modern Statistics
+Summary:
+Bayesian inference continues to unify various probabilistic modeling frameworks. The paper highlights improvements in variational inference and Monte Carlo sampling, enabling scalable Bayesian computation. Applications range from scientific discovery to robust decision-making under uncertainty.
+
+Keywords:
+Bayesian inference, variational methods, Monte Carlo, probabilistic modeling, uncertainty
