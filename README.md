@@ -1,38 +1,67 @@
 # 📘 Universal Academic Skill — 通用学科学习系统
 
-**Universal Academic Skill** 是一个结构化、可执行的学习框架，旨在系统化地帮助学习任意学科（如深度学习、物理学、经济学等）。  
-它不仅包括系统性的学习模板文档，还集成了自动化辅助脚本，可用于资料收集、论文摘要提取、练习题生成等任务。
+**通用的学科学习框架与辅助工具合集**  
+帮助学习者系统整理教材与专家资源、分析前沿论文、提炼核心思维模型，并通过实践习题和反思日志深化理解。
 
 ---
 
-## 🧠 📌 项目简介
+## 🧠 项目简介
 
-这个项目的目标是：
+这个仓库提供一套通用的学习 Skill 体系，配合自动化脚本，可用于：
 
-- 提供一个 **通用学科学习模板**，覆盖教材整理、专家资料、前沿论文、思维模型、争议分析等内容；
-- 引入自动化脚本，辅助抓取教材、摘要论文、提取论文元数据并生成练习题；
-- 为学习者和研究者搭建一个系统化学习方案，提升理解深度；
-- 易于扩展，可应用在任何学科领域。
+- 📚 教材与资源整理  
+- 📄 前沿论文抓取与摘要  
+- 🧩 思维模型与跨学科思考  
+- ❓ 苏格拉底式理解提问  
+- 📝 自动生成练习题模板
 
----
-
-## 🚀 功能亮点
-
-✨ **通用 Skill 文档模板**  
-- 系统性整理学习方法与结构内容  
-- 按模块组织教材、专家讲解与前沿论文
-
-🛠 **自动化脚本支持**  
-- 自动抓取书籍/论文资料  
-- 自动生成文章摘要  
-- 自动创建理解检验题目标
-
-📄 **多格式输出支持**  
-- Markdown 可阅读  
-- 支持进一步转换成 PDF/Word
-
-📚 📋 详细安装与使用步骤请见下面说明。
+目标是让你“真正理解而非记忆”，提升学习效率和批判性思维能力。
 
 ---
 
-## 📦 仓库目录结构
+## 🚀 快速开始
+
+### 📦 依赖安装
+
+确保你已安装 Python 3.8+，然后在项目根目录执行：
+
+```bash
+pip install -r requirements.txt
+
+📂 项目结构说明
+
+├── README.md                       # 当前文件
+├── UNIVERSAL_ACADEMIC_SKILL.md     # 通用 Skill 主文档
+├── requirements.txt                # Python 依赖清单
+├── build_docs.sh                   # 导出 Markdown 为 PDF/Word 脚本
+├── fetch_books.py                  # 教材抓取脚本
+├── auto_summary.py                 # 摘要提取脚本
+├── fetch_openalex.py               # OpenAlex 论文查询脚本
+├── generate_quiz.py                # 练习题生成脚本
+├── LICENSE                         # 开源许可（MIT）
+└── outputs/                        # 自动生成输出产物
+
+📌 抓取教材列表
+python fetch_books.py
+📌 自动生成文章/论文摘要
+python auto_summary.py
+📌 OpenAlex 论文元数据查询
+python fetch_openalex.py
+📌 生成理解检验题模板
+python generate_quiz.py
+📌 导出为 PDF/Word 文档
+bash build_docs.sh
+
+⚠️ build_docs.sh 需要安装 Pandoc + LaTeX 才能生成 PDF。
+
+📘 License
+
+本项目采用 MIT License，详见 LICENSE。
+
+🙌 贡献与反馈
+
+欢迎大家提出建议、贡献脚本或完善 Skill 内容！
+请通过创建 Issue / Pull Request 参与本项目发展。
+
+
+---
